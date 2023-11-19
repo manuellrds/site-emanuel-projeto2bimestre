@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="pastacss/meu.css">
+    <title>Formulário parte 1</title>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <form id="userForm">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome">
+            </div>
+
+            <div class="form-group">
+                <label>Gênero:</label>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="generoM" name="genero" value="Masculino">
+                    <label class="form-check-label" for="generoM">Masculino</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="generoF" name="genero" value="Feminino">
+                    <label class="form-check-label" for="generoF">Feminino</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="generoO" name="genero" value="Outro">
+                    <label class="form-check-label" for="generoO">Outro</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="interesses">Interesses:</label>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="placadevideo" name="interesse" value="placadevideo">
+                    <label class="form-check-label" for="placadevideo">PLACA DE VIDEO</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="processador" name="interesse" value="processador">
+                    <label class="form-check-label" for="processadores">PROCESSADORES</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="placamae" name="interesse" value="placamae">
+                    <label class="form-check-label" for="placamae">PLACA MAE</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="perifericos" name="interesse" value="perifericos">
+                    <label class="form-check-label" for="perifericos">PERIFERICOS</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="outros" name="interesse" value="outros">
+                    <label class="form-check-label" for="outros">OUTROS</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="observacoes">Observações:</label>
+                <textarea class="form-control" id="observacoes" name="observacoes" rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="idade">Idade:</label>
+                <input type="number" class="form-control" id="idade" name="idade">
+            </div>
+
+            <div class="form-group">
+                <label for="quantidade">Quantidade De produtos que ira Comprar:</label>
+                <input type="number" class="form-control" id="quantidade" name="quantidade">
+            </div>
+            <div id="mensagemAgradecimento" style="display:none;" class="alert alert-success mt-3">
+                Obrigado pela preferência! Entraremos em contato em breve.
+            </div>
+
+            <button type="button" class="btn btn-primary" onclick="verificarSelecoes()">Enviar</button>
+        </form>
+    </div>
+
+    <script src="pastacss/script.js"></script>
+</body>
+</html>

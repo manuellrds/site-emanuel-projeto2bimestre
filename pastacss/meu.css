@@ -1,0 +1,45 @@
+body {
+    background: none; 
+    color: #000; 
+}
+
+.container {
+    width: 100%;
+    max-width: none;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    margin: auto;
+    margin-top: 50px;
+}
+#mensagemAgradecimento {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.btn-primary {
+    margin-top: 10px;
+    background-color: #2007ff;
+    border-color: #0720ff;
+    color: #000;
+}
+
+.btn-primary:hover {
+    background-color: #2b2fff;
+    border-color: rgb(47, 43, 255);
+    color: #000;
+}
+
+
+body.masculino {
+    background-color: #0000FF; 
+}
+
+body.feminino {
+    background-color: #FF69B4; 
+}
+
+body.outro {
+    background-color: #808080; 
+}
